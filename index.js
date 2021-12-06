@@ -8,7 +8,7 @@ import {pizzarouter} from "./routes/pizza.js";
 dotenv.config();
 const app=express();
 
-const PORT=process.env.PORT;
+const PORT=process.env.PORT;//heroku can connect to available port
 
 app.use(express.json());//inbuilt middleware which tranform the body data to json
 
